@@ -4,7 +4,8 @@ general:
   build_dir: backend
 orbs:
   node: circleci/node@4.1
-
+  yarn: itinerisltd/yarn@2.1.1
+  
 workflows:
   sample:
     jobs:
