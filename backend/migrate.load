@@ -1,0 +1,7 @@
+load database
+     from sqlite://.tmp/data.db
+     into postgres://sqvepycyymhfzp:956a59ff3357cec9771f6d3a7c8deb69a38f77a9b9271c5d8d48b3c851979b9c@ec2-52-30-81-192.eu-west-1.compute.amazonaws.com:5432/d6dp9323i0t1ha?sslmode=require
+
+ with include drop, create tables, create indexes, reset sequences
+
+  set work_mem to '16MB', maintenance_work_mem to '512 MB';
