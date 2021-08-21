@@ -8,6 +8,7 @@ import '../styles/normalize'
 import Header from '../components/Header'
 import LayoutRoot from '../components/LayoutRoot'
 import LayoutMain from '../components/LayoutMain'
+import UnderConstruction from '../components/UnderConstruction'
 
 import ArticlesComponent from '../components/Articles'
 import { TypeArticle } from '../typings'
@@ -70,8 +71,13 @@ const IndexLayout: React.FC<IndexLayoutProps> = ({ children }) => (
           ]}
         />
         <Header title={data.site.siteMetadata.title} />
-        <LayoutMain>{children}</LayoutMain>
-        <ArticlesComponent articles={data.allStrapiArticle.edges} />
+        {process.env.NODE_ENV === 'production' && <UnderConstruction />}
+        {process.env.NODE_ENV !== 'production' && (
+          <>
+            <LayoutMain>{children}</LayoutMain>
+            <ArticlesComponent articles={data.allStrapiArticle.edges} />
+          </>
+        )}
       </LayoutRoot>
     )}
   />
