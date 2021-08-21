@@ -17,7 +17,7 @@ interface CategoryProps {
 }
 
 export const query = graphql`
-  query Category($id: Int!) {
+  query Category($id: String) {
     articles: allStrapiArticle(filter: { categories: { elemMatch: { id: { eq: $id } } } }) {
       edges {
         node {

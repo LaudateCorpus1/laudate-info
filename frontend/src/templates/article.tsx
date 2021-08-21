@@ -24,7 +24,7 @@ interface ArticleProps {
 }
 
 export const query = graphql`
-  query ArticleQuery($id: Int!) {
+  query ArticleQuery($id: String) {
     strapiArticle(strapiId: { eq: $id }) {
       strapiId
       title
