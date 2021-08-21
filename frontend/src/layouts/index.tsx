@@ -70,10 +70,10 @@ const IndexLayout: React.FC<IndexLayoutProps> = ({ children }) => (
             { name: 'keywords', content: data.site.siteMetadata.keywords },
           ]}
         />
-        <Header title={data.site.siteMetadata.title} />
         {process.env.NODE_ENV === 'production' && <UnderConstruction />}
         {process.env.NODE_ENV !== 'production' && (
           <>
+            <Header title={data.site.siteMetadata.title} />
             <LayoutMain>{children}</LayoutMain>
             <ArticlesComponent articles={data.allStrapiArticle.edges} />
           </>
