@@ -17,7 +17,7 @@
     "pg-connection-string": "^2.5.0",
     "react-markdown": "^6.0.3",
     "react-moment": "^1.1.1",
-    "sqlite3": "5.0.0",
+    "sqlite3": "5.0.3",
     "strapi": "3.6.6",
     "strapi-admin": "3.6.6",
     "strapi-connector-bookshelf": "3.6.6",
