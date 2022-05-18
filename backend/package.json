@@ -18,7 +18,7 @@
     "react-markdown": "^6.0.3",
     "react-moment": "^1.1.1",
     "sqlite3": "5.0.0",
-    "strapi": "3.6.6",
+    "strapi": "3.6.10",
     "strapi-admin": "3.6.6",
     "strapi-connector-bookshelf": "3.6.6",
     "strapi-plugin-content-manager": "3.6.6",
